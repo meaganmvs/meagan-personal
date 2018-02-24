@@ -1,0 +1,17 @@
+<div layout="row">
+    <h1 class="header-txt center">Search GIFs</h1>
+</div>
+<div layout="row" flex="50" class="center">
+    <md-input-container flex="50" class="search-input">
+        <label>are you ready for gif?</label>
+        <input type="text" name="search" ng-model="search.phrase">
+    </md-input-container>
+    <md-button ng-click="searchGiphy()">Search</md-button>
+</div>
+<div layout="row" class="gif-display" flex="80" class="center">
+    <div ng-repeat="g in gifs" track by $index>
+        <a ng-href="{{g.url}}" target="_blank">
+            <img ng-src='{{g.images.downsized.url}}'/>
+        </a>
+    </div>
+</div>
