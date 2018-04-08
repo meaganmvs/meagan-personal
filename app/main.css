@@ -18,6 +18,10 @@ html {
     font-family: 'Magra', sans-serif;
 }
 
+input {
+    font-family: 'Magra', sans-serif;
+}
+
 body {
    background-color: #FA7093;
 }
@@ -53,7 +57,7 @@ p {
 }
 
 .header {
-    height: 50px;
+    max-height: 100px;
 }
 
 .footer {
@@ -115,7 +119,37 @@ img {
 
 .gif-display {
     flex-wrap: wrap;
-    margin-left: 200px;
+    margin-left: 50px;
+    width: 85%;
+}
+
+.contact label {
+    color: black;
+    font-style: italic;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.contact input {
+    border-bottom: 5px solid;
+    background-color: white;
+    height: 50px;
+    color: black;
+    font-size: 20px;
+}
+
+.contact textarea.md-input {
+    border-bottom: 5px solid;
+    background-color: white;
+    min-height: 100px;
+    color: black;
+}
+
+.contact-btn {
+    height: 50px;
+    width: 108px;
+    font-size: 16px;
+    margin-right: auto;
 }
 
 .hamburger {

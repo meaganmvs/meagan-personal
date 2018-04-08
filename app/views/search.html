@@ -1,4 +1,4 @@
-<div layout="column" style="position: relative; bottom: 275px;">
+<div layout="column">
 <div layout="row">
     <h1 class="header-txt center">GET GIFFY WITH IT</h1>
 </div>
@@ -9,8 +9,8 @@
     </md-input-container>
     <md-button ng-click="searchGiphy()">Search</md-button>
 </div>
-<div layout="row" class="gif-display" flex="80" class="center">
-    <div ng-repeat="g in gifs" track by $index>
+<div layout="row" class="gif-display" class="center">
+    <div ng-repeat="g in gifs" class="center" track by $index>
         <a ng-href="{{g.url}}" target="_blank">
             <img ng-src='{{g.images.downsized.url}}'/>
         </a>

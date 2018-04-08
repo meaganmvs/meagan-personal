@@ -24,5 +24,11 @@ angular.module('giphySearchApp')
             $mdSidenav(componentId).toggle();
         }
     }
+    
+    $scope.msg = {};
+    $scope.sendEmail = function () {
+        //here need to take msg data, and send to API on the backend to send an email :-/
+        /** TO DO: create simple PHP back end to send email **/
+    };
 
   });

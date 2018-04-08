@@ -1,0 +1,26 @@
+<div layout="column">
+    <div layout="row">
+        <md-input-container flex="50" class="contact center">
+            <label>NAME</label>
+            <input type="text" name="name" ng-model="msg.name" placeholder="what do you call yourself?">
+        </md-input-container>
+    </div>
+    
+    <div layout="row">
+        <md-input-container flex="50" class="contact center">
+            <label>EMAIL</label>
+            <input type="text" name="email" ng-model="msg.email" placeholder="email@email.email">
+        </md-input-container>
+    </div>
+    
+    <div layout="row">
+        <md-input-container flex="50" class="contact center">
+            <label>MESSAGE</label>
+            <textarea type="text" name="message" ng-model="msg.message" placeholder="just saying hello!"></textarea>
+        </md-input-container>
+    </div>
+    <div layout="row" flex="50">
+        <md-button ng-click="sendEmail()" class="contact-btn center">SEND MSG</md-button>
+    </div>
+    
+</div>
