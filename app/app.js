@@ -16,17 +16,21 @@ angular
     
     $routeProvider
       .when('/', {
-        templateUrl: 'index.html',
-        controller: 'SearchCtrl'
+        templateUrl: 'views/meagan.html'
       })
+     .when('/gifs', {
+        templateUrl: 'views/search.html'
+    })
+    .when('/contact', {
+        templateUrl: 'views/contact.html'
+    })
       .otherwise({
         redirectTo: '/'
       });
   })
-    .directive('search', function () {
+.directive('meagan', function () {
         return {
             restrict: 'E',
-            templateUrl: 'views/search.html',
-            controller: 'SearchCtrl'
-        };
-});
+            templateUrl: 'views/meagan.html'
+        }
+    });

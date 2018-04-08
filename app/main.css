@@ -3,20 +3,28 @@
   flex-basis: auto;
 }
 
+@font-face {
+    font-family: 'Magra', sans-serif;
+}
+
 md-content {
     min-height: calc(100vh - 176px);
-    margin-left: 50px;
-    margin-right: 50px;
+    background-color: #FA7093;
+    padding: 20px;
+    height: 100%;
 }
 
 html {
-    font-family: Verdana, "Geneva", sans-serif;
+    font-family: 'Magra', sans-serif;
+}
+
+body {
+   background-color: #FA7093;
 }
 
 h1, h2, h3, h4, h5 {
   margin-top: 5px;
   margin-bottom: 5px;
-  height: initial;
 }
 
 p {
@@ -25,10 +33,22 @@ p {
   text-align: left;
 }
 
+.meagan {
+    font-size: 100px;
+    font-weight: bold;
+    color: #7E2ED8;
+    text-align: center;
+    text-shadow: -3px 3px 0 #FACAD5;
+}
+
+.meagan.sievers {
+    animation: fadein 2s 1;
+}
+
 .header-txt {
     font-size: 50px;
     font-weight: bold;
-    color: grey;
+    color: white;
     margin-bottom: 50px;
 }
 
@@ -38,6 +58,9 @@ p {
 
 .footer {
     height: 50px;
+}
+.line {
+    border: 5px solid #FFC673;
 }
 
 .tiny-txt {
@@ -51,16 +74,32 @@ p {
     margin-right: auto;
 }
 
+md-input-container .md-input {
+    color: white;
+    border-color: #FFC673 !important;
+}
+
+md-input-container label {
+    color: white;
+}
+
+md-input-container:not(.md-input-invalid).md-input-focused label {
+    color: #FFC673;
+}
+
 .md-button {
     height: 30px;
-    background-color: #7991b7;
+    background-color: #FFC673;
     color: white;
     margin-top: 20px;
+    font-weight: bold;
     margin-right: 100px;
+    box-shadow: -3px 3px 0 #FACAD5;
 }
 
 .md-button:hover {
-    color: #7991b7;
+    font-style: italic;
+    background-color: #7E2ED8 !important;
 }
 
 .search-input {
@@ -77,4 +116,146 @@ img {
 .gif-display {
     flex-wrap: wrap;
     margin-left: 200px;
+}
+
+.hamburger {
+    color: white;
+    font-size: 3em;
+    margin-left: auto;
+}
+
+.hamburger:hover {
+    animation: jiggle 2s infinite;  
+    cursor: pointer;
+}
+
+.social-icon {
+    color: white;
+    font-size: 3em;
+    margin: 15px;
+    text-align: center;
+}
+
+.social-icon:hover {
+    animation: jiggle 2s infinite;  
+    cursor: pointer;
+}
+
+.bounceInDown {
+   animation-name: noshow, bounceInDown;
+   animation-duration: 3s;
+   animation-iteration-count: 1;
+   animation-timing-function: ease-out;
+   opacity: 1;
+}
+
+.bounceInDown.first {
+     animation-delay: 0s, 0s;
+}
+
+.bounceInDown.second {
+     animation-delay: 0s, .5s;
+}
+
+.bounceInDown.third {
+     animation-delay: 0s, 1s;
+}
+
+.bounceInDown.fourth {
+     animation-delay: 0s, 1.5s;
+}
+
+.bounceInDown.fifth {
+     animation-delay: 0s, 2s;
+}
+
+.bounceInDown.sixth {
+     animation-delay: 0s, 2.5s;
+}
+
+.nav {
+    width: 100%;
+    max-width: 100%;
+    background-color: #FACAD5;
+}
+
+.nav .md-button {
+    width: 100%;
+    background-color: #FACAD5;
+    font-size: 50px;
+    color: #7E2ED8;
+    height: 75px;
+    padding: 5px;
+    padding-top: 20px;
+}
+
+.nav .md-button:hover {
+    background-color: #FACAD5 !important;
+    font-style: italic;
+}
+
+.nav .hamburger {
+    float: right;
+    padding: 20px;
+}
+
+.nav md-content {
+   background-color: #FACAD5;
+}
+
+@keyframes jiggle {
+    0% {
+        transform: rotate(-30deg);
+        }
+    50% {
+        transform: rotate(30deg);
+    }
+}
+
+@keyframes noshow
+{ 
+    from { opacity: 0; } to { opacity: 0 }
+}
+
+@keyframes bounceInDown {
+    0%{
+      opacity: 0;
+      transform: translateY(-2000px);
+   }
+   60% {
+      opacity: 1;
+      transform: translateY(30px);
+   }
+   80% {
+     opacity: 1;
+      transform: translateY(-10px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+    
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@media screen and (max-width: 992px) {
+    .resp-text {
+        font-size: 75px;
+    }
+    .resp-icon {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .resp-text {
+        font-size: 40px;
+    }
+    .resp-icon {
+        font-size: 1em;
+    }
 }
