@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('giphySearchApp')
+angular.module('meaganApp')
   .controller('SearchCtrl', function ($scope, $http, $sce, $timeout, $mdSidenav) {
     $scope.search = {};
     $scope.testing = 'elephant';
@@ -27,8 +27,6 @@ angular.module('giphySearchApp')
     
     $scope.msg = {};
     $scope.sendEmail = function () {
-        //here need to take msg data, and send to API on the backend to send an email :-/
-        /** TO DO: create simple PHP back end to send email **/
     };
 
   });

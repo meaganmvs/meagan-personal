@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="giphySearchApp" ng-controller="SearchCtrl"> <!--<![endif]-->
+<html lang="en" ng-app="meaganApp" ng-controller="SearchCtrl"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <base href="/">
   <title>Meagan Sievers</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--<link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">-->
-  <!--<link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">-->
   <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
-  <!--<script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>-->
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 </head>
 <body>
   <md-sidenav class="md-sidenav-right nav" md-component-id="right" md-disable-backdrop>
     <md-content>
         <a ng-click="toggleNav()" style="margin-left:auto"><i class="fa fa-times hamburger"></i></a>
-        <md-button href="#!" ng-click="toggleNav()">HOME</md-button>
-        <md-button href="#!gifs" ng-click="toggleNav()" >GIFS</md-button>
-        <md-button href="#!contact" ng-click="toggleNav()" >CONTACT</md-button>
+        <md-button href="/" ng-click="toggleNav()">HOME</md-button>
+        <md-button href="gifs" ng-click="toggleNav()" >GIFS</md-button>
+        <md-button href="photos" ng-click="toggleNav()" >PHOTOS</md-button>
+        <md-button href="contact" ng-click="toggleNav()" >CONTACT</md-button>
     </md-content>
 </md-sidenav>
     <md-content layout = "column" flex>

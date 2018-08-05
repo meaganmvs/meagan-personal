@@ -4,26 +4,30 @@
 }
 
 @font-face {
-    font-family: 'Magra', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 md-content {
     min-height: calc(100vh - 176px);
-    background-color: #FA7093;
-    padding: 20px;
+    background-color: #5F4F91;
+    padding: 50px;
     height: 100%;
 }
 
 html {
-    font-family: 'Magra', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 input {
-    font-family: 'Magra', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: white;
 }
 
 body {
-   background-color: #FA7093;
+   background-color: #B1A8CE;
 }
 
 h1, h2, h3, h4, h5 {
@@ -37,12 +41,21 @@ p {
   text-align: left;
 }
 
+::-moz-selection {
+    background-color: deeppink;
+}
+
+::selection {
+    background-color: deeppink;
+}
+
 .meagan {
     font-size: 100px;
     font-weight: bold;
-    color: #7E2ED8;
+    color: #5F4F91;
     text-align: center;
-    text-shadow: -3px 3px 0 #FACAD5;
+    text-shadow: -3px 3px 0 #B1A8CE;
+    display: none;
 }
 
 .meagan.sievers {
@@ -54,6 +67,8 @@ p {
     font-weight: bold;
     color: white;
     margin-bottom: 50px;
+    width: 100%;
+    text-align: center;
 }
 
 .header {
@@ -64,7 +79,21 @@ p {
     height: 50px;
 }
 .line {
-    border: 5px solid #FFC673;
+    border: 2px solid #B1A8CE;
+}
+
+h1 {
+    font-size: 50px;
+    color: white;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.intro {
+    font-size: 22px;
+    color: white;
+    width: 80%;
+    font-weight: 400;
 }
 
 .tiny-txt {
@@ -80,7 +109,7 @@ p {
 
 md-input-container .md-input {
     color: white;
-    border-color: #FFC673 !important;
+    border-color: #FFDC73 !important;
 }
 
 md-input-container label {
@@ -88,22 +117,25 @@ md-input-container label {
 }
 
 md-input-container:not(.md-input-invalid).md-input-focused label {
-    color: #FFC673;
+    color: #FFDC73;
 }
 
 .md-button {
     height: 30px;
-    background-color: #FFC673;
-    color: white;
+    background-color: #FFDC73;
+    color: #5F4F91;
     margin-top: 20px;
     font-weight: bold;
     margin-right: 100px;
-    box-shadow: -3px 3px 0 #FACAD5;
+    box-shadow: -3px 3px 0 #B1A8CE;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .md-button:hover {
     font-style: italic;
-    background-color: #7E2ED8 !important;
+    background-color: #B1A8CE !important;
+    box-shadow: -3px 3px 0 #FFDC73;
 }
 
 .search-input {
@@ -111,7 +143,7 @@ md-input-container:not(.md-input-invalid).md-input-focused label {
     margin-left: auto;
 }
 
-img {
+.gif-image {
     height: 150px;
     width: 250px;
     margin: 20px;
@@ -124,7 +156,7 @@ img {
 }
 
 .contact label {
-    color: black;
+    color: white;
     font-style: italic;
     margin: 5px;
     font-weight: bold;
@@ -210,31 +242,59 @@ img {
 .nav {
     width: 100%;
     max-width: 100%;
-    background-color: #FACAD5;
+    background-color: #B1A8CE;
 }
 
 .nav .md-button {
     width: 100%;
-    background-color: #FACAD5;
+    background-color: #B1A8CE;
     font-size: 50px;
-    color: #7E2ED8;
+    color: #5F4F91;
     height: 75px;
     padding: 5px;
     padding-top: 20px;
 }
 
 .nav .md-button:hover {
-    background-color: #FACAD5 !important;
+    background-color: #B1A8CE !important;
     font-style: italic;
+    box-shadow: -3px 3px 0 #B1A8CE;
+    color: #FFDC73;
 }
 
 .nav .hamburger {
     float: right;
     padding: 20px;
+    color: #5F4F91;
+}
+
+.nav .hamburger:hover{
+    color: #FFDC73;
 }
 
 .nav md-content {
-   background-color: #FACAD5;
+   background-color: #B1A8CE;
+}
+
+.photos {
+    margin: 50px;
+}
+
+.photos .image-cell {
+    display: inline-block;
+    margin: .5em;
+}
+
+.photos img {
+    max-width: 100%;
+}
+
+.photos h2 {
+    color: white;
+}
+
+.photos a {
+    font-size: 18px;
 }
 
 @keyframes jiggle {
@@ -290,6 +350,26 @@ img {
         font-size: 40px;
     }
     .resp-icon {
-        font-size: 1em;
+        font-size: 2em;
     }
+}
+
+
+/*photos responsive*/
+@media screen and (min-width: 1000px) {
+  .photos .image-cell {
+    width: calc(100% / 3);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .photos .image-cell {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .photos .image-cell {
+    width: calc(33.3333% - 2rem);
+  }
 }

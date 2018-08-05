@@ -5,14 +5,14 @@
  * Created By Meagan Sievers
  */
 angular
-  .module('giphySearchApp', [
+  .module('meaganApp', [
     'ngAnimate',
     'ngAria',
     'ngMessages',
     'ngRoute',
     'ngMaterial'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $locationProvider) {
     
     $routeProvider
       .when('/', {
@@ -24,9 +24,13 @@ angular
     .when('/contact', {
         templateUrl: 'views/contact.html'
     })
+    .when('/photos', {
+        templateUrl: 'views/photos.html'
+    })
       .otherwise({
         redirectTo: '/'
       });
+     $locationProvider.html5Mode(true);
   })
 .directive('meagan', function () {
         return {
@@ -34,3 +38,6 @@ angular
             templateUrl: 'views/meagan.html'
         }
     });
+
+
+

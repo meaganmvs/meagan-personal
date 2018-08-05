@@ -1,8 +1,8 @@
 {
-  "name": "giphy-search-2",
-  "description": "Take 2 at Giphy Search App",
+  "name": "meagan-personal",
+  "description": "Meagan Sievers Personal Website",
   "version": "0.0.0",
-  "homepage": "https://github.com/angular/angular-seed",
+  "homepage": "meagansievers.com",
   "license": "MIT",
   "private": true,
   "dependencies": {

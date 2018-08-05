@@ -1,3 +1,3 @@
-# `giphy-search 2` — giphy search v2
+# meagan personal site
 
 run npm start
